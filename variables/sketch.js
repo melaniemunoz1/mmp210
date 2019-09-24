@@ -1,4 +1,7 @@
-var faceSize=400;
+var faceSize=400
+var x=300
+var y=600
+
 
 function setup () {
     createCanvas(800, 500);
@@ -8,27 +11,22 @@ function draw () {
     fill(150,100);
     stroke("white");
     strokeWeight(10);
-    circle(300, 200, 100);//left eye
-    ellipse(400, 250, 700, 500);//face
-    circle(500, 200, 100);//right eye
+    circle(x,y-400,100);//left eye
+    ellipse(faceSize,x+100,y+200, y+100);
+    circle(x+200, x-100,y-550);//right eye
     
     fill("lightblue");
     triangle()
     
-   
-    );
+   circle(x+100,y-300,y-550);
+    
     
 
     
-    //points
-    line(400,200,400,400);
-   arc(400, 450, 80, 60, 0, PI + QUARTER_PI);
+   
+   arc(faceSize,faceSize+50, x-230, x-200, 0, PI + QUARTER_PI);
     
-    triangle(
-    500,400,
-    400,300,
-    400,400 
-    );
+   
     
  
 }
