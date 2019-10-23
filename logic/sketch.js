@@ -9,7 +9,7 @@ function setup () {
 }
 
 function draw () {
-    background("red");
+    backgro0nd("red");
        
    image(rhino,-200,0,mouseX,mouseY);
 
