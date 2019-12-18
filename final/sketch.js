@@ -1,5 +1,5 @@
 var serial;
-var portName = "/dev/tty.usbmodemFD121";
+var portName = "/dev/tty.usbmodemFA131";
 var sensorValue;
 
 function setup() {
@@ -43,6 +43,7 @@ function serialEvent() {
 }
 
 function draw() {
+    
 
     stroke(255);
     if (sensorValue < 200 && sensorValue > 15) {
